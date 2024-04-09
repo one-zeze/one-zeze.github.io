@@ -12,18 +12,18 @@
 
 # theme: 'minimal-mistakes-jekyll'
 # remote_theme: 'mmistakes/minimal-mistakes'
-minimal_mistakes_skin: 'dark' # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale: 'ko-KR'
-title: 'Move'
-title_separator: '-'
+locale: "ko-KR"
+title: "Growing Developer<br><span class='site-sub-title'>: with Ambition and Tenacity</span>"
+title_separator: "-"
 subtitle: # 'Developer'
-name: 'Wonzae Lee'
-description: 'An amazing website.'
-url: 'https://one-zeze.github.io'
+name: "Wonzae Lee"
+description: "An amazing website."
+url: "https://one-zeze.github.io"
 baseurl: # '/'
-repository: 'one-zeze/one-zeze.github.io.git'
+repository: "one-zeze/one-zeze.github.io.git"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: # '/assets/img/img1.jpg'
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
@@ -106,54 +106,54 @@ analytics:
 
 # Site Author
 author:
-  name: 'Wonzae Lee'
-  avatar: '/assets/img/img1.jpg'
-  bio: 'Backend Developer'
-  location: 'South Korea'
-  email: 'tales0708@gmail.com'
+  name: "Wonzae Lee"
+  avatar: "/assets/img/img1.jpg"
+  bio: "Backend Developer"
+  location: "South Korea"
+  email: "tales0708@gmail.com"
   links:
-    - label: 'Email'
-      icon: 'fas fa-fw fa-envelope-square'
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.name@email.com"
 
-    - label: 'GitHub'
-      icon: 'fab fa-fw fa-github'
-      url: 'https://github.com/one-zeze'
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/one-zeze"
 
-    - label: 'Website'
-      icon: 'fas fa-fw fa-link'
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
-    - label: 'Twitter'
-      icon: 'fab fa-fw fa-twitter-square'
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
-    - label: 'Facebook'
-      icon: 'fab fa-fw fa-facebook-square'
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
 
-    - label: 'Instagram'
-      icon: 'fab fa-fw fa-instagram'
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
 # Site Footer
 footer:
   links:
-    - label: 'Twitter'
-      icon: 'fab fa-fw fa-twitter-square'
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
       # url:
-    - label: 'Facebook'
-      icon: 'fab fa-fw fa-facebook-square'
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
       # url:
-    - label: 'GitHub'
-      icon: 'fab fa-fw fa-github'
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
       # url:
-    - label: 'GitLab'
-      icon: 'fab fa-fw fa-gitlab'
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
       # url:
-    - label: 'Bitbucket'
-      icon: 'fab fa-fw fa-bitbucket'
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
       # url:
-    - label: 'Instagram'
-      icon: 'fab fa-fw fa-instagram'
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
       # url:
 
 # Reading Files
@@ -161,8 +161,8 @@ include:
   - .htaccess
   - _pages
 exclude:
-  - '*.sublime-project'
-  - '*.sublime-workspace'
+  - "*.sublime-project"
+  - "*.sublime-workspace"
   - vendor
   - .asset-cache
   - .bundle
@@ -190,8 +190,8 @@ exclude:
 keep_files:
   - .git
   - .svn
-encoding: 'utf-8'
-markdown_ext: 'markdown,mkdown,mkdn,mkd,md'
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Conversion
 markdown: kramdown
@@ -277,7 +277,7 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: ''
+      path: ""
       type: posts
     values:
       layout: single

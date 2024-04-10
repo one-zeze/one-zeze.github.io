@@ -30,10 +30,6 @@ assign feature_row = page.feature_row %} {% endif %}
         <div class="archive__item-excerpt">
           {{ f.excerpt | markdownify }}
         </div>
-        {% endif %} {% if f.stack %}
-        <span class="archive__item-stack">
-          {{ f.stack }}
-        </span>
         {% endif %} {% if f.url %}
         <p>
           <a href="{{ f.url | relative_url }}" class="btn {{ f.btn_class }}">{{

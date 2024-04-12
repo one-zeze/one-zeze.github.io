@@ -16,6 +16,7 @@ toc_icon: "laptop-code"
 버스의 운행정보를 각각 번갈아가며 확인해야 하는 번거로움을 해결하는 것을 목표로 함.  
 <br>
 국비교육 과정 실습을 목표로, 약 한 달간 간단한 프로토타입 수준의 애플리케이션 개발(문서 작성, DB 설계, Open API 연동, CRUD API 개발 등)  
+<br>
 [GitHub - one-zeze/JourneyGenie](https://github.com/one-zeze/JourneyGenie)  
 <br>
 
@@ -23,10 +24,9 @@ toc_icon: "laptop-code"
 
 ---
 
-**Back** - Spring Boot 3.0.4(Java 17), JPA, MySql  
+**Back** - Spring Boot 3.0.4(Java 17, Gradle), JPA, MySql  
 **Front** - HTML5, JavaScript, JQuery, Ajax  
 **Etc** - TortoiseSVN, Notion, Discord  
-**Open API** - [공공데이터포털 (국토교통부 시외/고속 버스, 기차정보)](https://www.data.go.kr/index.do)  
 <br>
 
 ### Develope Log
@@ -40,7 +40,7 @@ toc_icon: "laptop-code"
 
 #### 예매(발권 및 결제)
 
-- 실제 결제까지는 진행되지 않고, 예매하려는 운행정보를 저장하도록 구현함. (사업자등록, PG 계약, 촉박한 개발 기간 등의 이유)로 결제 기능 미구현.
+- 실제 결제까지는 진행되지 않고, 예매하려는 운행정보를 저장하도록 구현함. (사업자등록, PG 계약 등의 이유)로 결제 기능 미구현.
 
 #### 회원가입/로그인(Json)
 
@@ -49,7 +49,7 @@ toc_icon: "laptop-code"
 
 #### Etc
 
-- 전반적으로 1:N, N:1과 같이 양방향으로 매핑된 Entity 객체를 조회하는 api 호출 시, 순환 참조로 인한 StackOverFlow가 발생하는 것을 확인함. 해당 api 호출 시, service layer에서 Entity 객체를 DTO, VO 객체로 변환 후에 전달하도록 적용함.
+- 전반적으로 1:N, N:1과 같이 양방향으로 매핑된 Entity 객체를 출력할 때, 순환 참조(toString() 함수로 인한 StackOverFlow)가 발생하는 것을 확인함. Entity 객체를 DTO, VO 객체로 변환 후에 전달하도록 하여 해결함.
 
 <br>
 

@@ -11,22 +11,26 @@ toc_icon: "laptop-code"
 
 ### Description
 
-팀 프로젝트 - 팀 리더, 백엔드 개발  
-[GitHub - one-zeze/JourneyGenie](https://github.com/one-zeze/JourneyGenie)  
+팀 프로젝트  
+Position - 팀 리더, 백엔드 개발  
+GitHub - [JourneyGenie](https://github.com/one-zeze/JourneyGenie)  
+<br>
+국비교육 과정 프로젝트로, 약 한 달간 간단한 프로토타입 수준의 애플리케이션 개발  
+문서(개발 일정표, 프로젝트 제안서, 설계 명세서, Diagram 등) 작성, DB 설계, Open API 연동, 전반적인 백엔드 개발 수행함.
+
 <br>
 기차와 (고속/시외)버스의 예매 및 운행정보를 한 화면에서 확인할 수 있는 웹 서비스.  
-특정 목적지까지 갈 때, 기차 탑승 후 시외버스로 환승을 해야 하는 상황에서, 기차와
-버스의 운행정보를 각각 번갈아가며 확인해야 하는 번거로움을 해결하는 것을 목표로 함.  
-<br>
-국비교육 과정 실습을 목표로, 약 한 달간 간단한 프로토타입 수준의 애플리케이션 개발(문서 작성, DB 설계, Open API 연동, CRUD API 개발 등)  
+특정 목적지까지 가기 위해, 기차 탑승 후 시외버스로 환승을 해야 할 때, 기차와
+버스의 운행정보를 각각 번갈아가며 확인해야 하는 번거로움을 해결하는 것을 목표로 함.
 <br>
 
 ### Stack
 
 ---
 
+**IDE** - Intellij, Visual Studio Code
 **Back** - Spring Boot 3.0.4(Java 17, Gradle), JPA, MySql  
-**Front** - HTML5, JavaScript, JQuery, Ajax  
+**Front** - Thymeleaf, JavaScript, JQuery, Ajax  
 **Etc** - TortoiseSVN, Notion, Discord  
 <br>
 
@@ -36,12 +40,13 @@ toc_icon: "laptop-code"
 
 **기차, 고속/시외 버스 운행정보 조회**
 
-- 기차역과 터미널 정보는 변동 사항이 적고, 조회 시마다 Open Api를 호출하는 것은 비효율적이라고 판단하여, DB에 저장하여 사용함
-- 출발지/도착지에 정상적인 값이 입력되면, 자동으로 해당 노선의 운행정보 조회 api를 호출하도록 함.
+- [공공데이터포털](https://www.data.go.kr/) 오픈 API 사용
+- 변동 사항이 적은 기차역과 터미널 정보는 DB 저장하여 사용, 운행정보는 오픈 API를 호출하여 제공하도록 함
+- 출발지/도착지에 값이 입력되면, 자동으로 해당 노선의 운행정보 조회하도록 구현.
 
 **예매(발권 및 결제)**
 
-- 실제 결제까지는 진행되지 않고, 예매하려는 운행정보를 저장하도록 구현함. (사업자등록, PG 계약 등의 이유)로 결제 기능 미구현.
+- 실제 결제까지는 진행되지 않고, 예매하려는 운행정보를 저장하도록 구현함. (사업자등록, PG 계약 문제)로 결제 기능 미구현.
 
 **회원가입/로그인**
 

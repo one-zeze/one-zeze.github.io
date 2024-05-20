@@ -170,9 +170,11 @@ hr {
 }
 
 /* lists */
-ul {
-  margin-top: 0;
+ul,
+ol {
+  margin-top: 0.5em;
 }
+
 ul li,
 ol li {
   margin-bottom: 0.5em;

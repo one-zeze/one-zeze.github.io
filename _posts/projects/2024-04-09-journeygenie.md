@@ -28,7 +28,7 @@ GitHub - [JourneyGenie](https://github.com/one-zeze/JourneyGenie)
 
 ---
 
-**IDE** - Intellij, Visual Studio Code
+**IDE** - Intellij, VSCode
 **Back** - Spring Boot 3.0.4(Java 17, Gradle), JPA, MySql  
 **Front** - Thymeleaf, JavaScript, JQuery, Ajax  
 **Etc** - TortoiseSVN, Notion, Discord  

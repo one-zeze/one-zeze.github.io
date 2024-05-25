@@ -37,11 +37,16 @@ breadcrumbs.html %} {% endunless %} {% endif %}
       <header>
         {% if page.title %}
         <h1 id="page-title" class="page__title p-name" itemprop="headline">
-          <a href="{{ page.url | absolute_url }}" class="u-url" itemprop="url"
+          {{page.title}}
+          <!--
+          작업: 페이지 제목 <a>태그 삭제 
+          날짜: 2024-05-26
+
+            <a href="{{ page.url | absolute_url }}" class="u-url" itemprop="url"
             >{{ page.title | markdownify | remove: "
             <p>" | remove: "</p>
             " }}</a
-          >
+          > -->
         </h1>
         {% endif %} {% include page__meta.html %}
       </header>

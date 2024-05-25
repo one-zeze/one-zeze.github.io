@@ -74,6 +74,20 @@
     {% assign minHeader = include.h_min | default: 1 %}
     {% assign maxHeader = include.h_max | default: 6 %}
     {% assign nodes = include.html | strip | split: '<h' %}
+    
+    <!-- 
+        2024-05-24
+    toc node h2 이상으로 설정 
+    -->
+    {% assign filtered_nodes = '' %}
+    {% for node in nodes %}
+        {% assign currLevel = node | replace: '"', '' | slice: 0, 1 | times: 1 %}
+        {% if currLevel == 1 or currLevel == 2 %}
+            {% assign filtered_nodes = filtered_nodes | append: '<h' | append: node %}
+        {% endif %}
+    {% endfor %}
+    {% assign nodes = filtered_nodes | split: '<h' %}
+
 
     {% assign firstHeader = true %}
     {% assign currLevel = 0 %}

@@ -9,7 +9,7 @@ toc_label: "Journey Genie"
 toc_icon: "laptop-code"
 ---
 
-### Description
+## Description
 
 팀 프로젝트  
 Position - 팀 리더, 백엔드 개발  
@@ -24,19 +24,15 @@ GitHub - [JourneyGenie](https://github.com/one-zeze/JourneyGenie)
 버스의 운행정보를 각각 번갈아가며 확인해야 하는 번거로움을 해결하는 것을 목표로 함.
 <br>
 
-### Stack
+## Stack
 
----
-
-**IDE** - Intellij, VSCode
+**IDE** - Intellij, VSCode  
 **Back** - Spring Boot 3.0.4(Java 17, Gradle), JPA, MySql  
 **Front** - Thymeleaf, JavaScript, JQuery, Ajax  
 **Etc** - TortoiseSVN, Notion, Discord  
 <br>
 
-### Develope Log
-
----
+## Develope Log
 
 **기차, 고속/시외 버스 운행정보 조회**
 
@@ -59,9 +55,7 @@ GitHub - [JourneyGenie](https://github.com/one-zeze/JourneyGenie)
 
 <br>
 
-### Contribution
-
----
+## Contribution
 
 -서비스의 핵심 기능에 높은 우선순위를 두자는 의견을 팀원들과 공유하여, 보다 높은 완성도를 달성하는 데에 기여함  
 -효율적인 협업과 진행을 위해 주간/일일 회의 진행  

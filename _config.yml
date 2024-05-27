@@ -16,7 +16,8 @@ minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon
 
 # Site Settings
 locale: "ko-KR"
-title: "Growing Developer<br><span class='site-sub-title'>: with Ambition and Tenacity</span>"
+# title: "Developer<br><span class='site-sub-title'>: with Ambition and Tenacity</span>"
+title: "Seize the Day!"
 title_separator: "-"
 subtitle: # 'Developer'
 name: "Wonzae Lee"
